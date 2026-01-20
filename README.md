@@ -4,8 +4,7 @@ A simple Square Wave Visualization which demonstrates the use of Fourier Series
 
 ## Description
 
-This project is a demonstration of the use of Fourier Series to generate a square wave. 
-We implement this by using the Fourier Series of a square wave.
+This project demonstrates Fourier Series to generate a square wave using:
 
 $$
 f(t) = \frac{4}{\pi} \sum_{n=1,3,5,\dots}^{\infty} \frac{1}{n} \sin(nt)
@@ -22,25 +21,39 @@ $$
 Step-by-step instructions to set up the project.
 
 1. Clone the repository:
-```terminal
+```cmd
 git clone https://github.com/plum-berry/square-vis-fourier.git
 ```
 2. Navigate to the project directory:
-```
+```cmd
 cd square-vis-fourier
 ```
 3. Install dependencies:
-```
+```cmd
 pip install -r requirements.txt
 ```
 
 ## Usage
-To run the script you need to provide a argument `n` which is the number of sine waves that our square wave generate should use.
+Run with argument n (number of sine waves):
 ```cmd
 python main.py 5
 ```
-This should generate a approximation of a square wave using sum of 5 sine waves. The 5 circles on the left represent each of those sine waves.
+This shows approximation using 5 sine waves.
 
+![Square Wave](wave_n_5.png)
 
+Try higher values
 
+```
+python main.py 10
+```
 
+As n increases the approximation converges to a square wave.
+
+## Contributing
+
+Guidelines for contributions.
+
+1. Fork the repository
+2. Create a feature branch  
+3. Submit a pull request
