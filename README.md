@@ -4,9 +4,7 @@ A simple Square Wave Visualization which demonstrates the use of Fourier Series
 
 ## Description
 
-Provide a brief overview of what the project does, its key features, and intended use cases. Keep this section to 2-3 sentences for clarity.
-
-Mention any technologies or standards used, such as Python 3.x.
+This project is a demonstration of the use of Fourier Series to generate a swuare wave.
 
 ## Requirements
 
