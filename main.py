@@ -49,8 +49,9 @@ while running:
         gfxdraw.filled_circle(screen,x +300,y+300,5,(255,255,255))
 
     yes.insert(0,y)
-    for i in range(len(yes)):
-        gfxdraw.pixel(screen,710+i,yes[i]+300,(255,255,255))
+    for i in range(1,len(yes)):
+        #gfxdraw.pixel(screen,710+i,yes[i]+300,(255,255,255))
+        pygame.draw.aaline(screen,(255,255,255),(710+i,yes[i] + 300),(710+i,yes[i-1]+300))
     
     gfxdraw.line(screen,x+300,y+300,710,y+300,(255,255,255))
     # remove the points of the sine way as they go offscreen
